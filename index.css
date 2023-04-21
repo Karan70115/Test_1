@@ -1,0 +1,74 @@
+/* Default styles */
+.heading{
+    background-color: greenyellow;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.heading:hover{
+    background-color: aqua;
+}
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+  }
+  
+  .display {
+    font-size: 8rem;
+    color: #fff;
+  }
+  
+  .set-alarm {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .set-alarm:hover {
+    background-color: #444;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 576px) {
+    .display {
+      font-size: 4rem;
+    }
+  
+    .set-alarm {
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .display {
+      font-size: 6rem;
+    }
+  
+    .set-alarm {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 769px) {
+    .display {
+      font-size: 10rem;
+    }
+  
+    .set-alarm {
+      padding: 1.25rem 2.5rem;
+      font-size: 2.25rem;
+    }
+  }  
+  
